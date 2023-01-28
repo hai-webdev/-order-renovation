@@ -1,0 +1,38 @@
+section.contact-container{
+    padding: 30px 0;
+    h2.company{
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    ul.info-list{
+        li.info-item{
+            padding: 15px;
+            width: calc(100% / 2 - 10px);
+            &:nth-child(2n + 1){
+                margin-right: 10px;
+            }
+            &:nth-child(2n){
+                margin-left: 10px;
+            }
+            i.icon{
+                float: left;
+                font-size: 4em;
+                color: darken(@bule, 30%);
+                margin-right: 20px;
+            }
+            .text{
+                float: left;
+                .title{
+                    font-size: 1.6em;
+                    margin-bottom: 10px;
+                }
+                .view{
+                    font-size: 1.8em
+                }
+            }
+        }
+    }
+}
+section.map-container{
+    margin-bottom: 50px;
+}

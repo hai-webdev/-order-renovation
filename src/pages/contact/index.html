@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   <!-- 引入公共页头 -->
+   <%= require("html-loader!../common/header/index.html") %>
+  <%= require("html-loader!../common/pageNav/index.html") %>
+  <section class="contact-container center">
+    <h2 class="company">北京卓尔曼装饰工程有限公司</h2>
+    <ul class="info-list clearF">
+      <li class="info-item fl clearF">
+        <i class="icon iconfont icon-ziyuan"></i>
+        <div class="text">
+          <div class="title">总部地址</div>
+          <div class="view">北京市大兴区荣华国际3号楼6层603室</div>
+        </div>
+      </li>
+      <li class="info-item fl clearF">
+        <i class="icon iconfont icon-dianhua2"></i>
+        <div class="text">
+          <div class="title">服务热线</div>
+          <div class="view">400-181-0556</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="map-container center">
+    <img src="/public/images/map.jpg" alt="">
+  </section>
+   <!-- 引入公共页尾 -->
+   <%= require("html-loader!../common/popup/index.html") %>
+   <%= require("html-loader!../common/aboutForm/index.html") %>
+   <%= require("html-loader!../common/footer/index.html") %>
+   <%= require("html-loader!../common/aside/index.html") %>
+  </body>
+</html>

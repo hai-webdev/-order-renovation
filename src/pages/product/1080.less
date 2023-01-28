@@ -1,0 +1,117 @@
+
+  section.pro-guarantee-container{
+    ul.guarantee-list{
+      li.guarantee-item{
+        flex: 1;
+        position: relative;
+        &::after{
+          top:25px;
+        }
+        i.icon{
+          font-size: 2.4em;
+          line-height: 48px;
+          width: 48px;
+          height: 48px;
+        }
+        p{
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
+  section.set-meal-container{
+    background-color: @light;
+    padding: 30px 0;
+    h2.title{
+      font-size: 2.4em;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .set-meal-wrapper{
+      background-color: #fff;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      ul.set-meal-list{
+        li.set-meal-item{
+          height: 270px;
+          min-width: 690px;
+          background-color: @light;
+          margin-bottom: 20px;
+          .left-img{
+            width: 270px;
+          }
+          .right-text{
+            width: 420px;
+            padding: 15px;
+            box-sizing: border-box;
+            .title{
+              font-size: 1.6em;
+              margin-bottom: 10px;
+            }
+            .info{
+              font-size: 1.2em;
+              margin-bottom: 10px;
+            }
+            .reserve{
+              padding: 2px 7px 3px 5px;
+              margin-bottom: 10px;
+              &::after{
+                border-top: 10.5px solid transparent;
+                border-bottom: 10.5px solid transparent;
+                border-left: 10.5px solid @orange;
+                border-right: 10.5px solid transparent;
+              }
+              i.icon{
+                font-size: 1.6em;
+              }
+            }
+            .note{
+              font-size: 1.2em;
+              padding-bottom: 10px;
+              margin-bottom: 10px;
+            }
+            dl.tags{
+              margin-bottom: 20px;
+              dt{
+                padding: 4px 8px;
+                font-size: 1.2em;
+              }
+              dd{
+                width: calc(100% - 60px);
+                span{
+                  font-size: 1.2em;
+                  padding: 4px 8px;
+                  margin: 0 2px 4px;
+                }
+              }
+            }
+            .subscribe{
+              padding: 7px 40px;
+              font-size: 1.6em;
+            }
+          }
+        }
+      }
+    }
+    .case-wrapper{
+      background-color: #fff;
+      padding: 30px;
+      box-sizing: border-box;
+      ul.case-list{
+        li.case-item{
+          margin: 0 15px 30px;
+          width: calc(100% / 3 - 30px);
+          .text{
+            .title{
+              font-size: 1.4em;
+            }
+          }
+          .bgimg(cover);
+          transition: .6s;
+          &:hover{
+            transform: translateY(-4px);
+          }
+        }
+      }
+    }
+  }

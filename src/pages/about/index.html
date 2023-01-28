@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   <!-- 引入公共页头 -->
+   <%= require("html-loader!../common/header/index.html") %>
+  <%= require("html-loader!../common/pageNav/index.html") %>
+   <section class="content-container">
+     <div class="content-view center">
+       <img src="/public/images/about.png" alt="">
+     </div>
+   </section>
+   <!-- 引入公共页尾 -->
+   <%= require("html-loader!../common/popup/index.html") %>
+   <%= require("html-loader!../common/aboutForm/index.html") %>
+   <%= require("html-loader!../common/footer/index.html") %>
+   <%= require("html-loader!../common/aside/index.html") %>
+  </body>
+</html>

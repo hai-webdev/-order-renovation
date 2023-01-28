@@ -1,0 +1,52 @@
+@import "../../../assets/global.less";
+section.form-container{
+    background-color: lighten(desaturate(@red, 40%), 20%);
+    padding: 30px 0;
+    .left-title{
+        margin-bottom: 10px;
+        .title{
+            font-size: 2em;
+            color:white;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .note{
+            font-weight: bold;
+            font-size: 1.4em;
+            color: white;
+            span{
+                color: @orange;
+            }
+        }
+    }
+    form.message-form{
+        margin-bottom: 10px;
+        input{
+            height: 44px;
+            width: 260px;
+            padding-left: 10px;
+            margin-right: 20px;
+            border:none;
+            outline:none;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        button{
+            display: block;
+            height: 44px;
+            width: 160px;
+            font-size: 2em;
+            color: white;
+            outline: none;
+            border:none;
+            border-radius: 6px;
+            background-color: @red;
+            cursor: pointer;
+            &:hover{
+                background-color:lighten(desaturate(@red, 20%), 10%);
+            }
+        }
+    }
+}
+@import "./1080.less" screen and (max-width:1080px);
+@import "./768.less" screen and (max-width:768px);

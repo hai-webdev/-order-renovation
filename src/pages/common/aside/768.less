@@ -1,0 +1,51 @@
+aside.server {
+    width: 50px;
+    background-color: transparent;
+    box-shadow: none;
+    bottom: 30px;
+    top: auto;
+    ul.aside-list {
+      li.aside-item {
+        padding: 5px 0;
+        display: none;
+        &.offer-popup-show{
+          display: flex;
+          border-radius: 50%;
+          height: 50px;
+          padding: 5px;
+          box-sizing: border-box;
+          align-content: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        dl {
+          width: 80px;
+        }
+        i.icon {
+          display: block;
+          font-size: 1.5em;
+        }
+        p {
+          margin-top: 4px;
+          font-size: 12px;
+          font-size: #000;
+        }
+        &:hover {
+          background-color: white;
+          dl {
+            display: block;
+            p {
+              color: inherit;
+            }
+          }
+          i.icon,
+          p {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+  

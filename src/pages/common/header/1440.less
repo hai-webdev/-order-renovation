@@ -1,0 +1,44 @@
+header.pc-header {
+  .top-head {
+    padding: 2rem 0;
+    .logo {
+      .bgimg(contain);
+      width: 300px;
+      text-indent: -1000px;
+    }
+    .tel {
+      span.title {
+        font-size: 1.4em;
+      }
+      span.number {
+        font-size: 2.5em;
+        color: @red;
+      }
+    }
+  }
+  .nav-head {
+    font-size: 1.6em;
+    .title,
+    .nav-btn {
+      line-height: 3;
+    }
+    .title {
+      width: 200px;
+    }
+    .nav-btn {
+      width: 100px;
+    }
+    .nav-list {
+      width: calc(100% - 300px);
+      .nav-item {
+        line-height: 3;
+        a {
+          padding: 0 18px;
+        }
+        ul.sublist {
+          top: 48px;
+        }
+      }
+    }
+  }
+}

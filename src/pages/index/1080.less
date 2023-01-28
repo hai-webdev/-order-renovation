@@ -1,0 +1,74 @@
+section.personality-container {
+    .personality-swiper {
+      width: calc(60% - 20px);
+      margin-right:20px;
+      .swiper-wrapper {
+        .swiper-slide {
+          height: 390px;
+          .bgimg(cover);
+        }
+      }
+    }
+    .compute {
+      width: 40%;
+      height: 390px;
+      padding: 15px;
+      .title {
+        border-radius: 4px;
+        font-size: 1.6em;
+        padding: 15px 0;
+        margin-bottom: 1em;
+      }
+      ul.tabs{
+        margin-bottom: 1.4em;
+          li.tab{
+              label{
+                display: block;
+                  width: 100%;
+                  padding: 10px 0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .icon{
+                    font-size: 3em;
+                  }
+                  span{
+                    font-size: 1.6em;
+                  }
+              }
+          }
+      }
+      select{
+        margin-bottom: 1.6em;
+        border-radius: 4px;
+        font-size: 1.6em;
+        padding: 10px;
+      }
+      label.text-input{
+        display: block;
+        margin-bottom: 1.6em;
+        input[type="text"]{
+          width: 100%;
+          font-size: 1.6em;
+          padding: 10px;
+          border-radius: 4px;
+        }
+        &[for="area"]{
+          position: relative;
+          &::after{
+            content: "㎡";
+            color: @lightGrey;
+            font-size:1.6em;
+            position: absolute;
+            right: 6px;
+          }
+        }
+      }
+      button[type="submit"]{
+        width: 100%;
+        padding: 10px;
+        font-size: 1.6em;
+        border-radius: 4px;
+      }
+    }
+  }
